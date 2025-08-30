@@ -1,6 +1,6 @@
 # Project: Batch Script Automation
 
-This project consists of two batch files (`mainscript.bat` and `start.bat`) designed for automating tasks such as folder creation, opening URLs, and running other scripts.
+This project consists of two batch files (`mainscript.bat` and `start.bat`) designed for automating tasks such as opening URLs and running other scripts.
 
 ---
 
@@ -30,15 +30,13 @@ This is a simple loop script that repeatedly calls the `start` command.
 
 ## Notes
 - Running `start.bat` directly will cause an **infinite loop** of opening new command windows. It is recommended to only run it through `mainscript.bat`.
-- Modify the GitHub release URLs in `mainscript.bat` as per your project requirements.
-- Administrator privileges may be required if creating folders in restricted directories.
+- Modify the URLs in `mainscript.bat` as per your project requirements.
 
 ---
 
 ## Example Workflow
 1. Run `mainscript.bat`.
-2. A new folder is created on the Desktop with subfolders.
-3. GitHub release pages open automatically.
+2. start.bat will be downloded automatically.
 4. After 5 seconds, additional batch files (`start.bat`, `start (1).bat`, and `start (2).bat`) are executed.
 
 ---

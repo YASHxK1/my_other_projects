@@ -1,8 +1,8 @@
 rem This is more intense version of start.bat 
 @echo off
-rem start //paste your single click download link here
-rem start //paste your single click download link here
-rem start //paste your single click download link here
+rem start //paste your start.bat single click download link here
+rem start //paste your start.bat single click download link here
+rem start //paste your start.bat single click download link here
 
 timeout /t 5 /nobreak >nul
 
