@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Data Scientist</title>
+</head>
+<link rel="stylesheet" href="portfolio.css">
+<body>
+    <!-- Home Section -->
+    <section id="home">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#project1">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#photography">Photography</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+        
+        <h1 class="main-title">Yash karle</h1>
+
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-button red"></div>
+                <div class="terminal-button yellow"></div>
+                <div class="terminal-button green"></div>
+            </div>
+    <div class="terminal-container">
+        <div class="terminal-content">
+            <span id="typed-text"></span>
+            <span class="cursor"></span>
+        </div>
+    </div>
+        </div>
+    </section>
+    
+    <!-- Project 1 Section -->
+    <section id="project1" class="content-section">
+        <div class="project-container">
+            <div class="project-info">
+                <h2 class="project-title"> Deepfake detector Tool </h2>
+                <p class="project-description">developed  A deep learning model to classify images as real or fake using a Convolutional Neural Network 
+                    (CNN). The model achieved a 71% test accuracy and was deployed to predict new images. The model was saved for future use 
+                    and a function was created to classify individual images, demonstrating its practical application in detecting deepfake images. </p>
+                <p class="project-description"> <strong>Technologies:</strong> Python, TensorFlow, Pandas, NumPy</p>
+            </div>
+            <div class="project-visual">
+                <div class="image-detector-container">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">
+                            <svg viewBox="0 0 24 24" width="48" height="48" stroke="#76ABAE" stroke-width="1.5" fill="none">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="17 8 12 3 7 8" />
+                                <line x1="12" y1="3" x2="12" y2="15" />
+                            </svg>
+                        </div>
+                        <div class="upload-text">
+                            <p>Drop image here or click to upload</p>
+                            <p class="upload-subtext">Analyze if your image is real or fake</p>
+                        </div>
+                        <input type="file" id="fileInput" accept="image/*" class="file-input">
+                    </div>
+                    
+                    <div class="result-container" id="resultContainer">
+                        <div class="image-preview">
+                            <img id="previewImage" src="" alt="Preview">
+                        </div>
+                        <div class="result-details">
+                            <div class="result-label" id="resultLabel">Ready to analyze</div>
+                            <div class="confidence-bar-container">
+                                <div class="confidence-bar-label">Confidence:<p id="confidencePrint"></p></div>
+                                <div class="confidence-bar-outer">
+                                    <div class="confidence-bar-inner" id="confidenceBar"></div>
+                                </div>
+                                <div class="confidence-percentage" id="confidencePercentage">0%</div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Project 2 Section -->
+    <section id="project2" class="content-section">
+        <div class="project-container reversed">
+            <div class="project-info">
+                <h2 class="project-title">Air Quality Analysis</h2>
+                <p class="project-description">This project is an interactive tool designed to analyze and predict air quality indices (AQI) across different geographic locations and time periods. enabling users to:
+                    <br>--Predict future AQI values for specific locations and dates.
+                    <br>--Visualize trends through historical data plots, location comparisons, and heatmaps.
+                    <br>--Evaluate model performance by comparing predicted vs. actual AQI values.
+                    <p class="project-description"> <strong>Technologies:</strong> IPandas & NumPy,Pywidgets,Scikit-learn</p>
+            </div>
+            <div class="project-visual">
+                <div class="data-viz" id="dataViz"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Project 3 Section -->
+    <section id="project3" class="content-section">
+        <div class="project-container">
+            <div class="project-info">
+                <h2 class="project-title">Connecticut Property Sale Price Predictor</h2>
+                <p class="project-description">This project is an interactive tool designed to predict property sale amounts in Connecticut based on town, property type, and listing year. Using historical property sales data, it leverages machine learning to provide accurate price estimates. Users can select a town, property type, and year from dropdown menus and sliders to instantly see the predicted sale amount. Additionally, the tool displays historical averages and trends for context, making it useful for buyers, sellers, and real estate professionals.</p>
+                <p class="project-description">Technologies: Python,Pandas & NumPy,Scikit-learn,IPywidgets</p>
+            </div>
+            <div class="project-visual">
+                <div class="graph-container">
+                    <svg viewBox="0 0 400 300" class="graph-svg">
+                        <!-- Grid lines -->
+                        <line x1="50" y1="250" x2="350" y2="250" stroke="#76ABAE" stroke-width="1" opacity="0.3" />
+                        <line x1="50" y1="200" x2="350" y2="200" stroke="#76ABAE" stroke-width="1" opacity="0.3" />
+                        <line x1="50" y1="150" x2="350" y2="150" stroke="#76ABAE" stroke-width="1" opacity="0.3" />
+                        <line x1="50" y1="100" x2="350" y2="100" stroke="#76ABAE" stroke-width="1" opacity="0.3" />
+                        <line x1="50" y1="50" x2="350" y2="50" stroke="#76ABAE" stroke-width="1" opacity="0.3" />
+                        
+                        <!-- Y-axis -->
+                        <line x1="50" y1="50" x2="50" y2="250" stroke="#76ABAE" stroke-width="2" />
+                        
+                        <!-- X-axis -->
+                        <line x1="50" y1="250" x2="350" y2="250" stroke="#76ABAE" stroke-width="2" />
+                        
+                        <!-- Graph points and lines -->
+                        <polyline 
+                            points="
+                                50,200
+                                100,180
+                                150,220
+                                200,100
+                                250,150
+                                300,80
+                                350,120
+                            " 
+                            fill="none" 
+                            stroke="#76ABAE" 
+                            stroke-width="3"
+                        />
+                        
+                        <!-- Data points -->
+                        <circle cx="50" cy="200" r="5" fill="#76ABAE" />
+                        <circle cx="100" cy="180" r="5" fill="#76ABAE" />
+                        <circle cx="150" cy="220" r="5" fill="#76ABAE" />
+                        <circle cx="200" cy="100" r="5" fill="#76ABAE" />
+                        <circle cx="250" cy="150" r="5" fill="#76ABAE" />
+                        <circle cx="300" cy="80" r="5" fill="#76ABAE" />
+                        <circle cx="350" cy="120" r="5" fill="#76ABAE" />
+                        
+                        <!-- X-axis labels -->
+                        <text x="50" y="270" fill="#EEEEEE" font-size="10" text-anchor="middle">Jan</text>
+                        <text x="100" y="270" fill="#EEEEEE" font-size="10" text-anchor="middle">Feb</text>
+                        <text x="150" y="270" fill="#EEEEEE" font-size="10" text-anchor="middle">Mar</text>
+                        <text x="200" y="270" fill="#EEEEEE" font-size="10" text-anchor="middle">Apr</text>
+                        <text x="250" y="270" fill="#EEEEEE" font-size="10" text-anchor="middle">May</text>
+                        <text x="300" y="270" fill="#EEEEEE" font-size="10" text-anchor="middle">Jun</text>
+                        <text x="350" y="270" fill="#EEEEEE" font-size="10" text-anchor="middle">Jul</text>
+                        
+                        <!-- Y-axis labels -->
+                        <text x="40" y="250" fill="#EEEEEE" font-size="10" text-anchor="end">0</text>
+                        <text x="40" y="200" fill="#EEEEEE" font-size="10" text-anchor="end">25</text>
+                        <text x="40" y="150" fill="#EEEEEE" font-size="10" text-anchor="end">50</text>
+                        <text x="40" y="100" fill="#EEEEEE" font-size="10" text-anchor="end">75</text>
+                        <text x="40" y="50" fill="#EEEEEE" font-size="10" text-anchor="end">100</text>
+                    </svg>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="content-section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-container">
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <div class="cert-icon-circle">
+                        <div class="cert-icon-inner"></div>
+                    </div>
+                </div>
+                <div class="certification-details">
+                    <h3 class="certification-title">Python Data Mastery:From Fundamentals to Machine Learning</h3>
+                    <p class="certification-issuer">by Lovely Professional University</p>
+                    <p class="certification-date">2024</p>
+                </div>
+            </div>
+            
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <div class="cert-icon-circle">
+                        <div class="cert-icon-inner"></div>
+                    </div>
+                </div>
+                <div class="certification-details">
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7139641867637362688/">
+                    <h3 class="certification-title">Metvy Data Analytics</h3></a>
+                    <p class="certification-issuer">By Metvy</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div>
+            
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <div class="cert-icon-circle">
+                        <div class="cert-icon-inner"></div>
+                    </div>
+                </div>
+                <div class="certification-details">
+-                    <h3 class="certification-title">Supervised Machine Learning:Regression and Classification </h3></a>
+                    <p class="certification-issuer">by DeepLearning.AI</p>
+                    <p class="certification-date">2024</p>
+                    
+                </div>
+            </div>
+            <br>
+            
+            
+        </div>
+    </section>    
+    <!-- Photography Section -->
+    <section id="photography" class="content-section photography-section">
+        <h2 class="section-title">Photography</h2>
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="Assates\img (7).jpg" alt="Photography 1" />
+            </div>
+            <div class="photo-item">
+                <img src="Assates\img (10).jpg" alt="Photography 2" />
+            </div>
+            <div class="photo-item">
+                <img src="E:\my portfolio\Assates\img (11).jpg" alt="Photography 3" />
+            </div>
+            <div class="photo-item">
+                <img src="Assates\img (5).jpg" alt="Photography 4" />
+            </div>
+            <div class="photo-item">
+                <img src="Assates\img (13).jpg" alt="Photography 5" />
+            </div>
+            <div class="photo-item">
+                <img src="Assates\img (12).jpg" alt="Photography 6" />
+            </div>
+        </div>
+    </section>
+
+    
+<!-- Contact Section -->
+<section id="contact" class="content-section">
+    <div class="contact-container">
+        <h2 class="contact-title"><strong>contact</strong></h2>
+        
+        <div class="social-buttons">
+            <a href="https://github.com/YASHxK1" target="_blank" class="social-btn github-btn">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/yashkarle10/" target="_blank" class="social-btn linkedin-btn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="karleyash10@gmail.com" class="social-btn email-btn">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+        </div>
+        
+
+    </div>
+</section>
+    
+    <script>    
+        // Create data visualization grid
+        const dataViz = document.getElementById('dataViz');
+        const rows = 36;
+        const cols = 36;
+        
+        // Create grid
+        for (let i = 0; i < rows; i++) {
+            const row = document.createElement('div');
+            row.className = 'data-row';
+            
+            for (let j = 0; j < cols; j++) {
+                const cell = document.createElement('div');
+                cell.className = 'data-cell';
+                row.appendChild(cell);
+            }
+            
+            dataViz.appendChild(row);
+        }
+        
+        // Animate grid
+        function animateGrid() {
+            const cells = document.querySelectorAll('.data-cell');
+            cells.forEach(cell => {
+                if (Math.random() > 0.9) {
+                    cell.classList.add('active');
+                } else {
+                    cell.classList.remove('active');
+                }
+            });
+            
+            setTimeout(animateGrid, 1000);
+        }
+        
+        // Start animations when page loads
+        window.addEventListener('load', () => {
+            animateGrid();
+        });
+        
+        // Navigation bar visibility logic - only visible on home section
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            const homeSection = document.getElementById('home');
+            const homeSectionBottom = homeSection.offsetTop + homeSection.offsetHeight;
+            
+            if (window.pageYOffset > homeSectionBottom) {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'block';
+            }
+        });
+        //typying animation
+            document.addEventListener('DOMContentLoaded', function() {
+            const text = "> a Computer Science student passionate about machine learning and AI. With hands-on experience in deep learning, Python development, and data analytics, I’ve built impactful tools like a deepfake detector. I aim to innovate in AI, particularly in image recognition and mental health technology.";
+            
+            const typedTextElement = document.getElementById('typed-text');
+            let charIndex = 0;
+            
+            function typeText() {
+                if (charIndex < text.length) {
+                    typedTextElement.textContent += text.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeText, 50); // Adjust typing speed here (milliseconds)
+                }
+            }
+            
+            // Start typing animation
+            typeText();
+        });
+        // Image Detector JavaScript for Project 1
+document.addEventListener('DOMContentLoaded', function() {
+    const uploadArea = document.getElementById('uploadArea');
+    const fileInput = document.getElementById('fileInput');
+    const resultContainer = document.getElementById('resultContainer');
+    const previewImage = document.getElementById('previewImage');
+    const resultLabel = document.getElementById('resultLabel');
+    const confidenceBar = document.getElementById('confidenceBar');
+    const confidencePercentage = document.getElementById('confidencePercentage');
+    
+    // Handle click on upload area
+    uploadArea.addEventListener('click', function() {
+        fileInput.click();
+    });
+    
+    // Handle drag events
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+        uploadArea.addEventListener(eventName, preventDefaults, false);
+    });
+    
+    function preventDefaults(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+    
+    ['dragenter', 'dragover'].forEach(eventName => {
+        uploadArea.addEventListener(eventName, highlight, false);
+    });
+    
+    ['dragleave', 'drop'].forEach(eventName => {
+        uploadArea.addEventListener(eventName, unhighlight, false);
+    });
+    
+    function highlight() {
+        uploadArea.classList.add('highlight');
+    }
+    
+    function unhighlight() {
+        uploadArea.classList.remove('highlight');
+    }
+    
+    // Handle file drop
+    uploadArea.addEventListener('drop', handleDrop, false);
+    
+    function handleDrop(e) {
+        const dt = e.dataTransfer;
+        const files = dt.files;
+        
+        if (files.length) {
+            handleFiles(files);
+        }
+    }
+    
+    // Handle file selection via input
+    fileInput.addEventListener('change', function() {
+        if (this.files.length) {
+            handleFiles(this.files);
+        }
+    });
+    
+    function handleFiles(files) {
+        const file = files[0];
+        if (!file.type.match('image.*')) {
+            alert('Please select an image file');
+            return;
+        }
+        
+        displayImage(file);
+        analyzeImage();
+    }
+    
+    function displayImage(file) {
+        const reader = new FileReader();
+        
+        reader.onload = function(e) {
+            previewImage.src = e.target.result;
+            resultContainer.style.display = 'flex';
+            resultLabel.textContent = 'Analyzing...';
+            resultLabel.className = 'result-label';
+            
+            // Reset confidence bar
+            confidenceBar.style.width = '0%';
+            confidencePercentage.textContent = '0%';
+            
+            // Add animation class
+            resultLabel.parentElement.classList.add('analyzing');
+        }
+        
+        reader.readAsDataURL(file);
+    }
+    
+    function analyzeImage() {
+        // Simulate analysis with timeout
+        setTimeout(() => {
+            // Remove animation class
+            resultLabel.parentElement.classList.remove('analyzing');
+            
+            // Generate a random prediction value between 0 and 1
+            // In a real application, this would come from your ML model
+            const prediction = Math.random();
+            
+            // Determine the label and confidence rate using your algorithm
+            let label, confidenceRate;
+            
+            if (prediction < 0.5) {
+                label = "Fake";
+                confidenceRate = 1 - prediction; // Confidence for "Fake"
+            } else {
+                label = "Real";
+                confidenceRate = prediction; // Confidence for "Real"
+            }
+            
+            // Update UI with results
+            resultLabel.textContent = `Result: ${label}`;
+            resultLabel.classList.add(label.toLowerCase());
+            console.log(`Confidence: ${confidencePercentFormatted}%`);
+            
+            // Update confidence bar
+            const confidencePercentFormatted = Math.floor(confidenceRate * 100);
+            confidenceBar.style.width = `${confidencePercentFormatted}%`;
+            confidencePercentage.textContent = `${confidencePercentFormatted}%`;
+            
+            // Color the confidence bar based on the result
+            if (label === 'Real') {
+                confidenceBar.style.backgroundColor = '#27ae60';
+            } else {
+                confidenceBar.style.backgroundColor = '#e74c3c';
+            }
+            
+        }, 2000); // 2 second delay to simulate processing
+    }
+});
+    </script>
+</body>
+</html>
+
