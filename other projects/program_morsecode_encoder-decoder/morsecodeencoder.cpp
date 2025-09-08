@@ -42,3 +42,5 @@ void saveToFile(const string &morseText) {
         cout << "Error opening file for writing." << endl;
     }
 }
+
+
