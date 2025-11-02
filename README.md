@@ -2,17 +2,6 @@
 
 A comprehensive collection of data science, machine learning, and software development projects showcasing skills in Python, data analysis, deep learning, and web development.
 
-## 📋 Table of Contents
-
-- [Projects Overview](#projects-overview)
-- [Churn Prediction Analysis](#churn-prediction-analysis)
-- [Deepfake Detector](#deepfake-detector)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-- [Other Projects](#other-projects)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Contact](#contact)
-
 ## 🚀 Projects Overview
 
 This repository contains multiple projects spanning different domains of data science, machine learning, and software development.
